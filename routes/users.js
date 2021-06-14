@@ -7,7 +7,7 @@ const usersController = require('../controllers/users_controller');
 router.get('/profile',usersController.profile);
 
 
-const postsController = require('../controllers/posts_controller');
+const postsController = require('../controllers/users_controller');
 
 router.get('/posts',postsController.posts);
 
