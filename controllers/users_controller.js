@@ -74,9 +74,16 @@ module.exports.createSession =  function(req,res){
        // handle user not found
        return res.redirect('back');
     }
-
   });
-
-
 };
+
+module.exports.endSession = function(req,res){
+  User.findById(req.cookies.user_id,function(err,user){
+    if(user){
+      res.clearCookie('user_id');
+      return res.redirect('/users/sign-in');
+    }
+  });
+}
+
 

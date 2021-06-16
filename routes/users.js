@@ -14,6 +14,8 @@ router.post('/create',usersController.create);
 
 router.post('/create-session',usersController.createSession);
 
+router.post('/end-session',usersController.endSession);
+
 
 const postsController = require('../controllers/users_controller');
 
