@@ -19,7 +19,8 @@ router.post('/create-session', passport.authenticate('local',{failureRedirect:'/
 
 const postsController = require('../controllers/users_controller');
 
-router.get('/posts',postsController.posts);
+router.get('/sign-out',usersController.endSession);
 
+router.get('/posts',postsController.posts);
 
 module.exports = router;
