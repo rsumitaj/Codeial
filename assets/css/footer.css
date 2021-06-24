@@ -1,0 +1,13 @@
+footer {
+  height: 15%;
+  background-color: lightgray;
+  display: flex; }
+  footer p {
+    font-size: 1.5rem;
+    margin: 5px; }
+  footer ul {
+    list-style: none; }
+    footer ul a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem; }

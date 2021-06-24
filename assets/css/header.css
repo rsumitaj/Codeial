@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  height: 7%;
+  width: 100%;
+  background-color: orange;
+  justify-content: space-between; }
+  header a {
+    text-decoration: none;
+    color: white; }
+  header #icon {
+    font-size: 2rem;
+    padding: 10px; }
+  header ul {
+    display: flex; }
+    header ul li {
+      display: inline-block;
+      padding: 5px;
+      font-size: 1.5rem; }

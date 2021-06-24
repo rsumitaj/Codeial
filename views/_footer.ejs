@@ -1,3 +1,13 @@
 <footer>
-  Page Footer
+  <p>&copy; Sumit Raj. All Rights Reserved</p>
+  
+  <ul>
+    <% if(locals.user){ %>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/users/profile">Profile</a>
+      </li>
+    <% } %>
 </footer>
