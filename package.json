@@ -13,6 +13,7 @@
   "author": "Sumit Raj",
   "license": "ISC",
   "dependencies": {
+    "connect-flash": "^0.1.1",
     "connect-mongo": "^4.4.1",
     "connect-mongodb-session": "^2.4.1",
     "cookie-parser": "^1.4.5",
@@ -22,6 +23,7 @@
     "express-session": "^1.17.2",
     "mongoose": "^5.12.13",
     "node-sass-middleware": "^0.11.0",
+    "noty": "^3.2.0-beta-deprecated",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   }
