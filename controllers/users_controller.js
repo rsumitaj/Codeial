@@ -39,7 +39,7 @@ module.exports.update = async  function(req,res){
         user.save();
         return res.redirect('back');
       });
-
+  
     }catch(err){
       req.flash('error',err);
       return res.redirect('back');
