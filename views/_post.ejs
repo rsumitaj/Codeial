@@ -10,8 +10,20 @@
       <small>
           <%= post.user.name %>
       </small>
+      <br>
+      <small>
+          <%if(locals.user){ %>
+            <a class="toggle-like-button"  data-likes="<%= post.likes.length %>" href="/likes/toggle/?id=<%= post._id %>&type=Post">
+                <%= post.likes.length %> 
+                <i class="fas fa-thumbs-up"></i>
+            </a>
+            <%}else{ %> 
+                <%=  post.likes.length %>
+              <% } %>
+      </small>
   </p>
   <div class="post-comments">
+      
       <% if (locals.user){ %>
           <!-- let's give an id to the new comment form, we'll also need to make the same changes in home_posts.js where we're adding a post to the page -->
           <form id="post-<%= post._id %>-comments-form" action="/comments/create" method="POST">
